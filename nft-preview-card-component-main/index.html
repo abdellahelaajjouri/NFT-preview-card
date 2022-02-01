@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      height: 1000px;
+    }
+    body{
+      background-color:  hsl(217, 54%, 11%);;
+      font-family: 'Outfit', sans-serif;
+    }
+    .v-d-b{
+      color: hsl(215, 51%, 70%);
+    }
+    .card{
+      background-color:hsl(216, 50%, 16%);
+      width: 23rem;
+      margin-top: 100px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .card-title h3{
+     color:  hsl(0, 0%, 100%) ;
+     font-weight: 600;
+    }
+    .card-text p{
+      font-weight: 400;
+    }
+    span{
+      color: hsl(0, 0%, 100%);
+    }
+    .row .col-6:nth-child(1) small{
+      color: hsl(178, 100%, 50%);
+      font-weight: 600;
+    }
+    .p-3 {
+      border-radius: 10px;
+    }
+    .row .col-2 img{
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: white 1px solid;
+    }
+    hr{
+      opacity: 0.7;
+    }
+    .card-img-top{
+      border-radius: 20px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="card shadow mx-auto p-2 ">
+    <!-- image -->
+    <img class=" card-img-top p-3" src="/images/image-equilibrium.jpg" alt="">
+    <!-- end image -->
+    <!-- card-body -->
+    <div class="card-body">
+      <!-- Title -->
+      <div class="card-title">
+        <h3>Equilibrium #3429</h3>
+      </div>
+      <!-- end Title -->
+      <!-- paragraphe -->
+      <div class="v-d-b card-text">
+        <p>
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </div>
+      <!-- end paragraphe -->
+      <!-- row -->
+      <div class="row">
+        <!-- ethereum -->
+        <div class="col-6">
+          <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+          <small>0.041 ETH</small>
+        </div>
+        <!-- end col-6 -->
+        <!-- clock -->
+        <div class="col-6 text-right px-4">
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+          <small class="v-d-b">3 days left</small>
+        </div>
+        <!-- end col-6 -->
+      </div>
+      <!-- end row -->
+      <!-- hr -->
+      <hr class="bg-secondary">
+      <!-- footer -->
+      <div class="row">
+        <div class="col-2">
+          <img src="/images/image-avatar.png" alt="">
+        </div>
+        <!-- end col-2 -->
+        <div class="col-10">
+          <p class="v-d-b">Creation of <span > Jules Wyvern </span> </p>
+        </div>
+        <!-- end col-10 -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end card body -->
+    </div>
+    <!-- end card -->
+  </div>
+  <!-- end container -->
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
